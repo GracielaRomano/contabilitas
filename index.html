@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilitas - Copiloto Financiero para Empresas Argentinas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">CONTABILITAS</div>
+            <ul>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#argentina">Argentina</a></li>
+                <li><a href="#demo">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Predicción Financiera<br>en Tiempo Real</h1>
+            <p class="tagline">El copiloto que anticipa el estado contable de tu empresa antes de que suceda</p>
+
+            <!-- Animated Ledger - Signature Element -->
+            <div class="ledger-demo">
+                <div class="ledger-header">PREDICCIONES ACTIVAS / PRÓXIMOS 30 DÍAS</div>
+                <table class="ledger-table">
+                    <thead>
+                        <tr>
+                            <th>CONCEPTO</th>
+                            <th>ACTUAL</th>
+                            <th>PREDICCIÓN</th>
+                            <th>VARIACIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ledger-body">
+                        <tr>
+                            <td class="concept-col">Flujo de Caja</td>
+                            <td class="actual-col">$ 1.247.500</td>
+                            <td class="predicted-col calculating">calculando...</td>
+                            <td class="change-col loading">—</td>
+                        </tr>
+                        <tr>
+                            <td class="concept-col">Resultado Operativo</td>
+                            <td class="actual-col">$ 428.300</td>
+                            <td class="predicted-col calculating">calculando...</td>
+                            <td class="change-col loading">—</td>
+                        </tr>
+                        <tr>
+                            <td class="concept-col">Margen Bruto</td>
+                            <td class="actual-col">34.2%</td>
+                            <td class="predicted-col calculating">calculando...</td>
+                            <td class="change-col loading">—</td>
+                        </tr>
+                        <tr>
+                            <td class="concept-col">Posición de IVA</td>
+                            <td class="actual-col">$ -87.400</td>
+                            <td class="predicted-col calculating">calculando...</td>
+                            <td class="change-col loading">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="ledger-footer">
+                    IA analizando 247 transacciones, 18 facturas pendientes, datos de AFIP actualizados hace 3 min
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#demo" class="btn btn-primary">Ver Demo en Vivo</a>
+                <a href="#funcionalidades" class="btn btn-secondary">Cómo Funciona</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">99.8%</span>
+                <span class="stat-label">Precisión Predictiva</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">&lt;5min</span>
+                <span class="stat-label">Actualización de Datos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Empresas Activas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">-73%</span>
+                <span class="stat-label">Errores de Proyección</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="funcionalidades">
+        <div class="section-header">
+            <h2 class="section-title animate-on-scroll">Cómo Trabaja el Copiloto</h2>
+            <p class="section-description animate-on-scroll">
+                Inteligencia artificial entrenada específicamente en normativa contable argentina
+            </p>
+        </div>
+
+        <div class="features-list">
+            <div class="feature-row animate-on-scroll">
+                <div>
+                    <div class="feature-label">PREDICCIÓN</div>
+                </div>
+                <div>
+                    <h3 class="feature-title">Anticipa tu Situación Financiera</h3>
+                    <p class="feature-description">
+                        Modelos de machine learning analizan tu historial contable, patrones de cobranza,
+                        estacionalidad y tendencias del sector para proyectar flujo de caja, rentabilidad
+                        y posición patrimonial con 30, 60 y 90 días de anticipación.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-row animate-on-scroll">
+                <div>
+                    <div class="feature-label">INTEGRACIÓN</div>
+                </div>
+                <div>
+                    <h3 class="feature-title">Conexión Directa con tus Sistemas</h3>
+                    <p class="feature-description">
+                        Sincronización automática con software contable (Tango, SAP, Bejerman, Siap+Móvil),
+                        homebanking de todos los bancos argentinos y servicios de AFIP. Sin carga manual,
+                        sin duplicación de trabajo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-row animate-on-scroll">
+                <div>
+                    <div class="feature-label">ALERTAS</div>
+                </div>
+                <div>
+                    <h3 class="feature-title">Detecta Problemas Antes de que Sucedan</h3>
+                    <p class="feature-description">
+                        Notificaciones automáticas ante proyecciones de falta de liquidez, desvíos
+                        presupuestarios, inconsistencias en declaraciones, vencimientos impositivos
+                        y oportunidades de optimización fiscal dentro del marco legal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-row animate-on-scroll">
+                <div>
+                    <div class="feature-label">ASISTENCIA</div>
+                </div>
+                <div>
+                    <h3 class="feature-title">Soporte Contable Inteligente</h3>
+                    <p class="feature-description">
+                        Responde consultas en lenguaje natural sobre tu situación contable, sugiere
+                        asientos de ajuste, valida imputaciones y genera borradores de reportes
+                        gerenciales listos para revisar con tu contador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study">
+        <div class="case-study-container">
+            <div class="case-header">
+                <div class="case-company animate-on-scroll">CASO DE ÉXITO / INDUSTRIA METALÚRGICA</div>
+                <p class="case-quote animate-on-scroll">
+                    "Evitamos una crisis de liquidez que habría costado $ 3.2M.
+                    El sistema nos alertó 45 días antes de que sucediera."
+                </p>
+                <p class="case-attribution animate-on-scroll">
+                    Marina Vidal, CFO — Metalúrgica San Martín S.A.
+                </p>
+            </div>
+
+            <div class="comparison-controls animate-scale">
+                <button class="toggle-btn active" data-view="before">
+                    ANTES / SIN PREDICCIÓN
+                </button>
+                <button class="toggle-btn" data-view="after">
+                    AHORA / CON CONTABILITAS
+                </button>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div class="chart-title">RESULTADO NETO TRIMESTRAL</div>
+                    <div class="chart-period">Q1 2025 - Q4 2025</div>
+                </div>
+                <div class="chart-canvas">
+                    <div class="bar-chart" id="barChart">
+                        <div class="bar-group">
+                            <div class="bar-wrapper">
+                                <div class="bar" data-before="40" data-after="95" style="height: 40%;">
+                                    <span class="bar-value">$ 840K</span>
+                                </div>
+                            </div>
+                            <div class="bar-label">Q1 2025</div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrapper">
+                                <div class="bar negative" data-before="20" data-after="85" style="height: 20%;">
+                                    <span class="bar-value">-$ 420K</span>
+                                </div>
+                            </div>
+                            <div class="bar-label">Q2 2025</div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrapper">
+                                <div class="bar" data-before="55" data-after="92" style="height: 55%;">
+                                    <span class="bar-value">$ 1.15M</span>
+                                </div>
+                            </div>
+                            <div class="bar-label">Q3 2025</div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrapper">
+                                <div class="bar" data-before="45" data-after="98" style="height: 45%;">
+                                    <span class="bar-value">$ 945K</span>
+                                </div>
+                            </div>
+                            <div class="bar-label">Q4 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card animate-on-scroll">
+                    <div class="metric-label">PÉRDIDAS EVITADAS</div>
+                    <div class="metric-value" id="metric1">—</div>
+                    <div class="metric-description">Crisis anticipada y resuelta</div>
+                </div>
+                <div class="metric-card animate-on-scroll">
+                    <div class="metric-label">TIEMPO DE REACCIÓN</div>
+                    <div class="metric-value" id="metric2">—</div>
+                    <div class="metric-description">De reactivo a proactivo</div>
+                </div>
+                <div class="metric-card animate-on-scroll">
+                    <div class="metric-label">MEJORA EN MARGEN</div>
+                    <div class="metric-value" id="metric3">—</div>
+                    <div class="metric-description">Optimización continua</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Argentine Focus Section -->
+    <section class="argentine-focus" id="argentina">
+        <div class="argentine-content">
+            <div>
+                <h2 class="section-title animate-left" style="color: var(--balance-sheet);">Diseñado para Argentina</h2>
+                <p class="animate-left" style="margin-bottom: 2rem; color: var(--slate); font-size: 1.1rem;">
+                    Cumplimiento total con regulaciones locales y organismos de control
+                </p>
+
+                <ul class="compliance-list">
+                    <li class="compliance-item">
+                        <span class="check-icon">✓</span>
+                        <span class="compliance-text">Integración con AFIP (F.931, percepciones, retenciones, régimen de información)</span>
+                    </li>
+                    <li class="compliance-item">
+                        <span class="check-icon">✓</span>
+                        <span class="compliance-text">Resoluciones técnicas FACPCE actualizadas automáticamente</span>
+                    </li>
+                    <li class="compliance-item">
+                        <span class="check-icon">✓</span>
+                        <span class="compliance-text">Cálculo de retenciones provinciales (ARBA, AGIP, Rentas provinciales)</span>
+                    </li>
+                    <li class="compliance-item">
+                        <span class="check-icon">✓</span>
+                        <span class="compliance-text">Soporte para monotributo, responsables inscriptos y exentos</span>
+                    </li>
+                    <li class="compliance-item">
+                        <span class="check-icon">✓</span>
+                        <span class="compliance-text">Ajuste por inflación según normas contables profesionales vigentes</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="regulatory-preview animate-right">
+                    <div class="regulatory-header">MONITOREO FISCAL / TIEMPO REAL</div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Próximo vencimiento AFIP</div>
+                        <div class="regulatory-value">IVA DGI - 20 Jul 2026</div>
+                        <div class="regulatory-status">✓ Importe calculado: $ 124.580</div>
+                    </div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Posición IVA proyectada</div>
+                        <div class="regulatory-value">Saldo a favor: $ 45.200</div>
+                        <div class="regulatory-status">Incluye facturas pendientes de recepción</div>
+                    </div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Percepción IIBB ARBA</div>
+                        <div class="regulatory-value">2.5% aplicable</div>
+                        <div class="regulatory-status">✓ Régimen general verificado</div>
+                    </div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Estado sincronización AFIP</div>
+                        <div class="regulatory-value">Actualizado</div>
+                        <div class="regulatory-status">Última consulta: hace 4 minutos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="demo">
+        <h2>Empezar a Predecir</h2>
+        <p>Prueba gratuita de 30 días, sin tarjeta de crédito. Implementación en menos de 48 horas.</p>
+        <div class="cta-buttons" style="justify-content: center;">
+            <a href="#" class="btn btn-primary">Solicitar Demo</a>
+            <a href="#" class="btn btn-secondary">Hablar con Ventas</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CONTABILITAS</h3>
+                <p style="color: var(--slate); margin-top: 1rem; font-size: 0.9rem;">
+                    Copiloto financiero predictivo para empresas argentinas.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>PRODUCTO</h3>
+                <ul>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Integraciones</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>EMPRESA</h3>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Casos de uso</a></li>
+                    <li><a href="#">Documentación</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="#">Términos de servicio</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cumplimiento</a></li>
+                    <li><a href="#">AFIP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Contabilitas. Desarrollado en Argentina para empresas argentinas.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
