@@ -1,6 +1,7 @@
 ﻿:root {
     --ledger-ink: #0D1B2A;
     --peso-teal: #1B998B;
+    --blue-light: #5DC3CF;
     --balance-sheet: #FFF8E7;
     --alert-red: #E63946;
     --forecast-amber: #FFB703;
@@ -67,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--peso-teal);
+    color: var(--blue-light);
 }
 
 /* Hero Section with Ledger */
@@ -75,7 +76,7 @@ nav a:hover {
     background: var(--ledger-ink);
     color: var(--balance-sheet);
     padding: 140px 2rem 60px;
-    border-bottom: 3px solid var(--peso-teal);
+    border-bottom: 3px solid var(--blue-light);
     position: relative;
     z-index: 2;
 }
@@ -124,7 +125,7 @@ nav a:hover {
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    border-bottom: 2px solid var(--peso-teal);
+    border-bottom: 2px solid var(--blue-light);
 }
 
 .ledger-table {
@@ -190,7 +191,7 @@ nav a:hover {
 }
 
 .positive {
-    color: var(--peso-teal);
+    color: var(--blue-light);
 }
 
 .warning {
@@ -321,14 +322,14 @@ nav a:hover {
 }
 
 .btn-primary {
-    background: var(--peso-teal);
+    background: var(--blue-light);
     color: var(--balance-sheet);
-    border-color: var(--peso-teal);
+    border-color: var(--blue-light);
 }
 
 .btn-primary:hover {
-    background: #168B7E;
-    border-color: #168B7E;
+    background: var(--blue-light);
+    border-color: var(--blue-light);
 }
 
 .btn-secondary {
@@ -379,7 +380,7 @@ nav a:hover {
     font-family: 'JetBrains Mono', monospace;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--peso-teal);
+    color: var(--blue-light);
     display: block;
     margin-bottom: 0.5rem;
     transition: all 0.3s ease;
@@ -449,7 +450,7 @@ nav a:hover {
 
 .feature-row:hover {
     background: white;
-    border-left-color: var(--peso-teal);
+    border-left-color: var(--blue-light);
     padding-left: 3rem;
     transform: translateX(10px);
     box-shadow: -10px 0 30px rgba(0,0,0,0.05);
@@ -462,7 +463,7 @@ nav a:hover {
     top: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(90deg, rgba(27, 153, 139, 0.05) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(93, 195, 207, 0.05) 0%, transparent 100%);
     transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1;
 }
@@ -481,7 +482,7 @@ nav a:hover {
 }
 
 .feature-row:hover .feature-label {
-    color: var(--peso-teal);
+    color: var(--blue-light);
     transform: translateX(5px);
 }
 
@@ -495,7 +496,7 @@ nav a:hover {
 }
 
 .feature-row:hover .feature-title {
-    color: var(--peso-teal);
+    color: var(--blue-light);
 }
 
 .feature-description {
@@ -601,7 +602,7 @@ nav a:hover {
     align-items: center;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--peso-teal);
+    border-bottom: 2px solid var(--blue-light);
 }
 
 .chart-title {
@@ -649,7 +650,7 @@ nav a:hover {
 
 .bar {
     width: 100%;
-    background: var(--peso-teal);
+    background: var(--blue-light);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     display: flex;
@@ -697,7 +698,7 @@ nav a:hover {
 .metric-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    border-color: var(--peso-teal);
+    border-color: var(--blue-light);
 }
 
 .metric-label {
@@ -711,7 +712,7 @@ nav a:hover {
     font-family: 'JetBrains Mono', monospace;
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--peso-teal);
+    color: var(--blue-light);
     margin-bottom: 0.5rem;
 }
 
@@ -725,8 +726,8 @@ nav a:hover {
     background: var(--ledger-ink);
     color: var(--balance-sheet);
     padding: 5rem 2rem;
-    border-top: 3px solid var(--peso-teal);
-    border-bottom: 3px solid var(--peso-teal);
+    border-top: 3px solid var(--blue-light);
+    border-bottom: 3px solid var(--blue-light);
 }
 
 .argentine-content {
@@ -760,7 +761,7 @@ nav a:hover {
 
 .compliance-item:hover {
     padding-left: 1rem;
-    border-bottom-color: var(--peso-teal);
+    border-bottom-color: var(--blue-light);
 }
 
 .compliance-item::before {
@@ -770,7 +771,7 @@ nav a:hover {
     top: 0;
     width: 3px;
     height: 0;
-    background: var(--peso-teal);
+    background: var(--blue-light);
     transition: height 0.3s ease;
 }
 
@@ -779,7 +780,7 @@ nav a:hover {
 }
 
 .check-icon {
-    color: var(--peso-teal);
+    color: var(--blue-light);
     font-size: 1.5rem;
     flex-shrink: 0;
     transition: all 0.3s ease;
@@ -802,7 +803,7 @@ nav a:hover {
     background: var(--balance-sheet);
     color: var(--ledger-ink);
     padding: 2rem;
-    border: 2px solid var(--peso-teal);
+    border: 2px solid var(--blue-light);
     transition: all 0.3s ease;
 }
 
