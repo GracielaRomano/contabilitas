@@ -270,7 +270,7 @@ const statsObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 
-const statsSection = document.querySelector('.stats');
+const statsSection = document.querySelector('.stats[data-animate-counters]');
 if (statsSection) {
     statsObserver.observe(statsSection);
 }

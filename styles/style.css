@@ -1674,3 +1674,92 @@ nav a[aria-current="page"] {
         border-bottom: none;
     }
 }
+
+/* About & use cases pages */
+.about-ledger {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.about-stats {
+    border-top: 2px solid var(--ledger-ink);
+}
+
+.use-cases-intro {
+    padding-bottom: 0;
+}
+
+.use-cases-intro .section-header {
+    margin-bottom: 0;
+}
+
+.use-case-block {
+    background: var(--balance-sheet);
+    padding: 4rem 2rem;
+    border-bottom: 2px solid #E0D5C7;
+}
+
+.use-case-block--alt {
+    background: #FFFDF8;
+}
+
+.use-case-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.use-case-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    letter-spacing: -0.02em;
+    color: var(--ledger-ink);
+    margin: 0.75rem 0 1rem;
+    line-height: 1.1;
+}
+
+.use-case-lead {
+    font-size: 1.15rem;
+    color: var(--slate);
+    max-width: 40rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.55;
+}
+
+.use-case-ledger {
+    max-width: 100%;
+    margin: 0 0 2.5rem;
+}
+
+.use-case-metrics {
+    margin-top: 0;
+}
+
+.use-case-split {
+    align-items: start;
+    gap: 3rem;
+}
+
+.use-case-split .features-list {
+    min-width: 0;
+}
+
+.use-case-split .feature-row {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.use-case-split .feature-row:hover {
+    padding-left: 1rem;
+    transform: none;
+    box-shadow: none;
+}
+
+.use-case-grid {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 968px) {
+    .use-case-block {
+        padding: 3rem 1.25rem;
+    }
+}
