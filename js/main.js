@@ -22,8 +22,11 @@ function animateLedger() {
         setTimeout(() => {
             const rows = document.querySelectorAll('#ledger-body tr');
             const row = rows[pred.row];
+            if (!row) return;
+
             const predictedCell = row.querySelector('.predicted-col');
             const changeCell = row.querySelector('.change-col');
+            if (!predictedCell || !changeCell) return;
 
             predictedCell.classList.remove('calculating');
             predictedCell.textContent = pred.predicted;
@@ -47,7 +50,9 @@ const ledgerObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 
-const ledger = document.querySelector('.ledger-demo');
+const ledger = document.querySelector('.ledger-demo #ledger-body .predicted-col')
+    ? document.querySelector('.ledger-demo')
+    : null;
 if (ledger) {
     ledgerObserver.observe(ledger);
 }
@@ -98,6 +103,8 @@ const metric2 = document.getElementById('metric2');
 const metric3 = document.getElementById('metric3');
 
 function updateChart(view) {
+    if (!metric1 || !metric2 || !metric3 || !bars.length) return;
+
     const data = caseStudyData[view];
 
     bars.forEach((bar, index) => {
@@ -143,7 +150,9 @@ toggleButtons.forEach(button => {
 });
 
 // Initialize with "before" view
-updateChart('before');
+if (metric1) {
+    updateChart('before');
+}
 
 // Animate chart when it comes into view
 const chartObserver = new IntersectionObserver((entries) => {

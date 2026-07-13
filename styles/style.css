@@ -1571,3 +1571,106 @@ nav a[aria-current="page"] {
         padding-right: 1.15rem;
     }
 }
+
+/* Security page */
+.security-hero .ledger-demo {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.security-audit .security-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: var(--peso-teal);
+    white-space: nowrap;
+}
+
+.security-pillars {
+    background: var(--balance-sheet);
+}
+
+.security-compliance .regulatory-value {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.security-practices {
+    background: var(--balance-sheet);
+    padding: 5rem 2rem;
+    border-bottom: 2px solid var(--ledger-ink);
+}
+
+.security-practices-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.security-control-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border: 2px solid var(--ledger-ink);
+    background: white;
+}
+
+.security-control-item {
+    padding: 2rem 2rem 2.25rem;
+    border-right: 1px solid #E0D5C7;
+    border-bottom: 1px solid #E0D5C7;
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.security-control-item:nth-child(2n) {
+    border-right: none;
+}
+
+.security-control-item:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+
+.security-control-item:hover {
+    background: #FFFDF8;
+}
+
+.security-control-code {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--blue-light);
+    margin-bottom: 1rem;
+}
+
+.security-control-item h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.65rem;
+    color: var(--ledger-ink);
+}
+
+.security-control-item p {
+    color: var(--slate);
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 28rem;
+}
+
+@media (max-width: 968px) {
+    .security-control-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .security-control-item {
+        border-right: none;
+    }
+
+    .security-control-item:nth-last-child(-n+2) {
+        border-bottom: 1px solid #E0D5C7;
+    }
+
+    .security-control-item:last-child {
+        border-bottom: none;
+    }
+}
