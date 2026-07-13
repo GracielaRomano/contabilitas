@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto — Contabilitas</title>
+    <meta name="description" content="Agendá una demo o hablá con el equipo de Contabilitas. Respuesta en menos de un día hábil.">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="contact-page">
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/Logo_contabilitas.png" alt="Contabilitas" class="logo-img">
+            </a>
+            <ul>
+                <li><a href="index.html#funcionalidades">Funcionalidades</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <p class="contact-eyebrow">CONTACTO / EQUIPO COMERCIAL</p>
+            <h1>Hablemos de tu<br>próximo trimestre</h1>
+            <p class="tagline">Agendá una demo o consultá con ventas. Sin formularios genéricos: pedimos solo lo necesario para responderte bien.</p>
+        </div>
+    </section>
+
+    <section class="contact-main" aria-labelledby="contact-form-title">
+        <div class="contact-layout">
+            <div class="contact-ledger" id="contact-ledger">
+                <div class="ledger-header">NUEVA CONSULTA / REF. CONTABILITAS</div>
+
+                <form id="contact-form" class="contact-form" novalidate>
+                    <h2 id="contact-form-title" class="visually-hidden">Formulario de contacto</h2>
+
+                    <div class="form-row">
+                        <label for="nombre">
+                            <span class="field-code">01</span>
+                            <span class="field-label">Nombre y apellido</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            autocomplete="name"
+                            required
+                            placeholder="Marina Vidal"
+                        >
+                        <p class="field-error" id="error-nombre" hidden>Indicá tu nombre completo.</p>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">
+                            <span class="field-code">02</span>
+                            <span class="field-label">Email de trabajo</span>
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            placeholder="marina@empresa.com.ar"
+                        >
+                        <p class="field-error" id="error-email" hidden>Usá un email válido de trabajo.</p>
+                    </div>
+
+                    <div class="form-row form-row--split">
+                        <div class="form-row-half">
+                            <label for="empresa">
+                                <span class="field-code">03</span>
+                                <span class="field-label">Empresa</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="empresa"
+                                name="empresa"
+                                autocomplete="organization"
+                                required
+                                placeholder="Metalúrgica San Martín S.A."
+                            >
+                            <p class="field-error" id="error-empresa" hidden>Indicá el nombre de la empresa.</p>
+                        </div>
+                        <div class="form-row-half">
+                            <label for="telefono">
+                                <span class="field-code">04</span>
+                                <span class="field-label">Teléfono <em>(opcional)</em></span>
+                            </label>
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                autocomplete="tel"
+                                placeholder="+54 11 5555-0000"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="motivo">
+                            <span class="field-code">05</span>
+                            <span class="field-label">Motivo</span>
+                        </label>
+                        <div class="select-wrap">
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>Elegí una opción</option>
+                                <option value="demo">Solicitar demo</option>
+                                <option value="ventas">Hablar con ventas</option>
+                                <option value="integracion">Consulta de integración</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <p class="field-error" id="error-motivo" hidden>Elegí el motivo de tu consulta.</p>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="mensaje">
+                            <span class="field-code">06</span>
+                            <span class="field-label">Mensaje</span>
+                        </label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="4"
+                            required
+                            placeholder="Contanos tamaño del equipo contable, software actual y qué querés ver en la demo."
+                        ></textarea>
+                        <p class="field-error" id="error-mensaje" hidden>Escribí un mensaje con al menos 20 caracteres.</p>
+                    </div>
+
+                    <div class="form-footer">
+                        <p class="form-footnote">Respondemos en menos de 1 día hábil · Datos tratados según normativa argentina</p>
+                        <button type="submit" class="btn btn-primary contact-submit">Enviar consulta</button>
+                    </div>
+                </form>
+
+                <div class="contact-success" id="contact-success" hidden>
+                    <div class="success-stamp">ASIENTO REGISTRADO</div>
+                    <h2>Consulta enviada</h2>
+                    <p>Recibimos tu mensaje. Un especialista te va a escribir al email indicado con los próximos pasos.</p>
+                    <dl class="success-meta">
+                        <div>
+                            <dt>Referencia</dt>
+                            <dd id="success-ref">CTB-000000</dd>
+                        </div>
+                        <div>
+                            <dt>Estado</dt>
+                            <dd class="success-status">En cola · &lt;24 hs hábiles</dd>
+                        </div>
+                    </dl>
+                    <a href="index.html" class="btn btn-secondary contact-back">Volver al inicio</a>
+                </div>
+            </div>
+
+            <aside class="contact-aside" aria-label="Información de contacto">
+                <div class="regulatory-preview contact-info-panel">
+                    <div class="regulatory-header">CANALES / TIEMPO REAL</div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Respuesta comercial</div>
+                        <div class="regulatory-value">&lt; 1 día hábil</div>
+                        <div class="regulatory-status">✓ Demo agendada en la misma semana</div>
+                    </div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Email directo</div>
+                        <div class="regulatory-value">contacto@contabilitas.com.ar</div>
+                        <div class="regulatory-status">Para consultas ya en curso</div>
+                    </div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Horario de atención</div>
+                        <div class="regulatory-value">Lun–Vie 9 a 18 hs</div>
+                        <div class="regulatory-status">Hora Argentina (ART)</div>
+                    </div>
+                    <div class="regulatory-item">
+                        <div class="regulatory-label">Prueba gratuita</div>
+                        <div class="regulatory-value">30 días</div>
+                        <div class="regulatory-status">✓ Sin tarjeta de crédito</div>
+                    </div>
+                </div>
+
+                <div class="contact-aside-note">
+                    <p class="contact-aside-label">QUÉ VAS A RECIBIR</p>
+                    <ul>
+                        <li>Confirmación por email en minutos</li>
+                        <li>Propuesta de horario para la demo</li>
+                        <li>Checklist de integración (Tango, Bejerman, AFIP)</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo_contabilitas.png" alt="Contabilitas" class="logo-img">
+                </a>
+                <p style="color: var(--slate); margin-top: 1rem; font-size: 0.9rem;">
+                    Copiloto financiero predictivo para empresas argentinas.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>PRODUCTO</h3>
+                <ul>
+                    <li><a href="index.html#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="index.html#argentina">Argentina</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>EMPRESA</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Agendar demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="#">Términos de servicio</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cumplimiento</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Contabilitas. Desarrollado en Argentina para empresas argentinas.</p>
+        </div>
+    </footer>
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>
