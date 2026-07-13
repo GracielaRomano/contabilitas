@@ -1763,3 +1763,30 @@ nav a[aria-current="page"] {
         padding: 3rem 1.25rem;
     }
 }
+
+/* Legal pages */
+.legal-meta-ledger {
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.legal-body {
+    padding-top: 4rem;
+}
+
+.legal-body .feature-description a,
+.regulatory-value a {
+    color: var(--peso-teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.legal-body .feature-description a:hover,
+.regulatory-value a:hover {
+    color: var(--ledger-ink);
+}
+
+.legal-page .feature-label {
+    color: var(--blue-light);
+}
