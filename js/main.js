@@ -11,9 +11,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Animated Ledger Prediction Sequence
 const predictions = [
-    { row: 0, predicted: '$ 1.524.800', change: '↑ 22.2% proyectado', positive: true },
-    { row: 1, predicted: '$ 486.150', change: '↑ 13.5% vs actual', positive: true },
-    { row: 2, predicted: '37.8%', change: '↑ 3.6 p.p. mejora', positive: true },
+    { row: 0, predicted: '$ 1.524,800', change: '↑ 22,2% proyectado', positive: true },
+    { row: 1, predicted: '$ 486.150', change: '↑ 13,5% vs actual', positive: true },
+    { row: 2, predicted: '37,8%', change: '↑ 3,6 p.p. mejora', positive: true },
     { row: 3, predicted: '$ 42.300', change: 'Saldo a favor estimado', positive: true }
 ];
 
@@ -73,7 +73,7 @@ const caseStudyData = {
         q3: { height: 55, value: '$ 1.15M', label: 'Q3 2025', isNegative: false },
         q4: { height: 45, value: '$ 945K', label: 'Q4 2025', isNegative: false },
         metrics: {
-            metric1: '$ 3.2M',
+            metric1: '% 0,00',
             metric2: '60 días',
             metric3: '+8%'
         }
@@ -84,7 +84,7 @@ const caseStudyData = {
         q3: { height: 92, value: '$ 1.93M', label: 'Q3 2025', isNegative: false },
         q4: { height: 98, value: '$ 2.06M', label: 'Q4 2025', isNegative: false },
         metrics: {
-            metric1: '$ 0',
+            metric1: '$ 3.2M',
             metric2: '45 días',
             metric3: '+24%'
         }
@@ -204,9 +204,9 @@ function animateCounter(element, target, suffix = '', duration = 2000) {
 
         let displayValue;
         if (isPercentage) {
-            displayValue = current.toFixed(1) + suffix;
+            displayValue = current.toFixed(1).replace('.', ',') + suffix;
         } else {
-            displayValue = Math.round(current) + suffix;
+            displayValue = Math.round(current).toLocaleString('es-AR') + suffix;
         }
 
         element.textContent = (isNegative ? '-' : '') + displayValue;
