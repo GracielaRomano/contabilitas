@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Animated Ledger Prediction Sequence
 const predictions = [
-    { row: 0, predicted: '$ 1.524,800', change: '↑ 22,2% proyectado', positive: true },
+    { row: 0, predicted: '$ 1.524,80', change: '↑ 22,2% proyectado', positive: true },
     { row: 1, predicted: '$ 486.150', change: '↑ 13,5% vs actual', positive: true },
     { row: 2, predicted: '37,8%', change: '↑ 3,6 p.p. mejora', positive: true },
     { row: 3, predicted: '$ 42.300', change: 'Saldo a favor estimado', positive: true }
